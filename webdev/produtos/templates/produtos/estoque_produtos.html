@@ -3,6 +3,37 @@
 {% load humanize %}
 
 {% block table_block %}
+
+<div class="header">
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+  aria-expanded="false" aria-controls="collapseExample">
+  <i class="bi bi-funnel-fill"></i>
+  </button>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <div class="filtrodepesquisa">
+        
+
+        <label for="text" class="colecao">Coleção</label>
+        <input type="text" class="form-control" id="colecao" name="colecao" placeholder="Ex: d'Mentira" required autofocus>
+
+        <label for="text" class="familia">Família</label>
+        <input type="text" class="form-control" id="familia" name="familia" placeholder="Ex: Nenhuma" required autofocus>
+
+        <label for="text" class="categorias">Categorias</label>
+        <input type="text" class="form-control" id="categorias" name="categorias" placeholder="Ex: Nenhuma" required autofocus>
+
+        <label for="text" class="tamanho">Tamanho</label>
+        <input type="text" class="form-control" id="tamanho" name="tamanho" placeholder="Ex: 5cm" required autofocus>
+
+        <button class="botaofiltro" onclick="filtrarProduto('Coleção')">Coleção</button>
+        <button class="botaofiltro" onclick="filtrarProduto('Família')">Família</button>
+        <button class="botaofiltro" onclick="filtrarProduto('Categorias')">Categorias</button>
+        <button class="botaofiltro" onclick="filtrarProduto('Tamanho')">Tamanho</button>
+    </div>
+    </div>
+  </div>
+</div>
 <div class="table">
 <table class="table">
   <thead>
