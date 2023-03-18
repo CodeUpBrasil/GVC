@@ -12,23 +12,35 @@
   <div class="collapse" id="collapseExample">
     <div class="card card-body">
       <div class="filtrodepesquisa">
-        <label for="text" class="colecao">Coleção</label>
-        <input type="text" class="form-control" id="colecao" name="colecao" placeholder="Ex: d'Mentira" required autofocus>
 
-        <label for="text" class="familia">Família</label>
-        <input type="text" class="form-control" id="familia" name="familia" placeholder="Ex: Nenhuma" required autofocus>
+        <div class="col-lg-4">
+          <label for="text" class="colecao">Coleção</label>
+          <input type="text" class="form-control" id="colecao" placeholder="Ex: d'Mentira" required autofocus>
 
-        <label for="text" class="categorias">Categorias</label>
-        <input type="text" class="form-control" id="categorias" name="categorias" placeholder="Ex: Nenhuma" required autofocus>
+          <label for="text" class="familia">Família</label>
+          <input type="text" class="form-control" id="familia" placeholder="Ex: Nenhuma" required autofocus>
 
-        <label for="text" class="tamanho">Tamanho</label>
-        <input type="text" class="form-control" id="tamanho" name="tamanho" placeholder="Ex: 5cm" required autofocus>
+          <label for="text" class="categorias">Categorias</label>
+          <input type="text" class="form-control" id="categorias" placeholder="Ex: Nenhuma" required autofocus>
+        
+          <label for="text" class="data-de-criacao">Data de criação</label>
+          <input type="text" class="form-control" id="data-de-criacao" placeholder="Ex: Indisponivel" required autofocus>
 
-        <button class="botaofiltro" onclick="filtrarProduto('Coleção')">Coleção</button>
-        <button class="botaofiltro" onclick="filtrarProduto('Família')">Família</button>
-        <button class="botaofiltro" onclick="filtrarProduto('Categorias')">Categorias</button>
-        <button class="botaofiltro" onclick="filtrarProduto('Tamanho')">Tamanho</button>
-    </div>
+          <label for="text" class="material">Material</label>
+          <input type="text" class="form-control" id="material" placeholder="Ex: Pedra" required autofocus>
+
+          <label for="text" class="tamanho">Tamanho</label>
+          <input type="text" class="form-control" id="tamanho" placeholder="Ex: 5cm" required autofocus>
+        </div>
+      
+      </div>
+
+      <div class="col-lg-4">
+        <button class="submit" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+          aria-expanded="false" aria-controls="collapseExample">
+          Filtrar
+        </button>
+      </div>    
     </div>
   </div>
 </div>
