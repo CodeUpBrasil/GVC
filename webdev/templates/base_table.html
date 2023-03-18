@@ -13,6 +13,13 @@
         <button type="button" class="btn btn-sm btn-{% if not sorting %}outline-{% endif %}primary" data-bs-toggle="modal" data-bs-target="#sortModal">Ordenar</button>
       </div>
     {% endif %}
+
+    <!-- Filter -->
+      <div class="me-2">
+        <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa-solid fa-filter"></i>
+        </button>
+      </div>
     
     <!-- Search -->
     <div class="me-2">
